@@ -1,0 +1,23 @@
+class Solution {
+public:
+    bool isPalindrome(int x) {
+        if(x < 0){
+            return false;
+        }
+        int rec = 1;
+        while(x / rec >= 10){
+           rec = rec * 10; 
+        }
+        while(x != 0){
+            int i = x / rec;
+            int j = x % 10;
+            if (i != j)
+                return false;
+            else{
+                x = (x % rec)/10;
+                rec = rec /100;
+            }
+        }
+        return true;
+    }
+};
