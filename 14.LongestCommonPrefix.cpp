@@ -12,7 +12,8 @@ public:
         if (strs.size() == 0) return res;
         for (int j = 0;j< strs[0].size();j++){
             for (int i=0;i<strs.size();i++){
-                if(strs[i][j]!=strs[0][j]) return res;
+                //if(strs[i][j]!=strs[0][j]) return res;
+                if(j>strs[i].size()||strs[i][j]!=strs[0][j]) return res;//inrease a judgement condition
             }
             res.push_back(strs[0][j]);
         }
