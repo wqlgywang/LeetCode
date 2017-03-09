@@ -84,7 +84,7 @@ public:
             head = l1;
             l1 = l1->next;
         }
-        p = head;
+        p = head;//不能换成p=head->next;
         while(l1!=NULL && l2!=NULL){
             
             if(l2->val<=l1->val){
