@@ -1,13 +1,14 @@
 /*Merge two sorted linked lists and return it as a new list. 
-The new list should be made by splicing together the nodes of the first two lists.*/
+*The new list should be made by splicing together the nodes of the first two lists.*/
 
 /*by myself,but has fault:
-Input:
-[2][1]
-Output:
-[1]
-Expected:
-[1,2]*/
+
+*Input:
+*[2][1]
+*Output:
+*[1]
+*Expected:
+*[1,2]*/
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -56,7 +57,8 @@ public:
         return head;
     }
 };
-/*a l*/
+/*a little change:结构体赋值的时候要先pre->next=l1,
+*然后才能pre=pre->next*/
 /**
  * Definition for singly-linked list.
  * struct ListNode {
